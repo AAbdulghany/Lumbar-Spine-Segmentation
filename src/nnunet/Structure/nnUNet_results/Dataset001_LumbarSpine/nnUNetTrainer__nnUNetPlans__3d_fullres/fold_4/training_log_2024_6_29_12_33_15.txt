@@ -1,0 +1,11 @@
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+ 
+2024-06-29 12:33:15.475359: do_dummy_2d_data_aug: True 
+2024-06-29 12:33:15.475550: Using splits from existing split file: /Users/saiffouda/WorkingSpace_code/DL/Project/Structure/nnUNet_preprocessed/Dataset001_LumbarSpine/splits_final.json 
+2024-06-29 12:33:15.475798: The split file contains 5 splits. 
+2024-06-29 12:33:15.475839: Desired fold for training: 4 
+2024-06-29 12:33:15.475894: This split has 8 training and 1 validation cases. 

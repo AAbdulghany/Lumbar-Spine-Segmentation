@@ -1,0 +1,77 @@
+[
+    {
+        "train": [
+            "BRATS_002",
+            "BRATS_003",
+            "BRATS_005",
+            "BRATS_007",
+            "BRATS_008",
+            "BRATS_009",
+            "BRATS_010"
+        ],
+        "val": [
+            "BRATS_001",
+            "BRATS_004"
+        ]
+    },
+    {
+        "train": [
+            "BRATS_001",
+            "BRATS_002",
+            "BRATS_003",
+            "BRATS_004",
+            "BRATS_005",
+            "BRATS_007",
+            "BRATS_009"
+        ],
+        "val": [
+            "BRATS_008",
+            "BRATS_010"
+        ]
+    },
+    {
+        "train": [
+            "BRATS_001",
+            "BRATS_003",
+            "BRATS_004",
+            "BRATS_007",
+            "BRATS_008",
+            "BRATS_009",
+            "BRATS_010"
+        ],
+        "val": [
+            "BRATS_002",
+            "BRATS_005"
+        ]
+    },
+    {
+        "train": [
+            "BRATS_001",
+            "BRATS_002",
+            "BRATS_003",
+            "BRATS_004",
+            "BRATS_005",
+            "BRATS_008",
+            "BRATS_010"
+        ],
+        "val": [
+            "BRATS_007",
+            "BRATS_009"
+        ]
+    },
+    {
+        "train": [
+            "BRATS_001",
+            "BRATS_002",
+            "BRATS_004",
+            "BRATS_005",
+            "BRATS_007",
+            "BRATS_008",
+            "BRATS_009",
+            "BRATS_010"
+        ],
+        "val": [
+            "BRATS_003"
+        ]
+    }
+]

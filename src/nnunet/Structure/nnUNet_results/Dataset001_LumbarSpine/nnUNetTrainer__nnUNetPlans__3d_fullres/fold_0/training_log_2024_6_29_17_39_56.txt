@@ -1,0 +1,26 @@
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+ 
+2024-06-29 17:39:56.821335: do_dummy_2d_data_aug: True 
+2024-06-29 17:39:56.821741: Using splits from existing split file: /Users/saiffouda/WorkingSpace_code/DL/Project/Structure/nnUNet_preprocessed/Dataset001_LumbarSpine/splits_final.json 
+2024-06-29 17:39:56.821822: The split file contains 5 splits. 
+2024-06-29 17:39:56.821859: Desired fold for training: 0 
+2024-06-29 17:39:56.821894: This split has 7 training and 2 validation cases. 
+2024-06-29 17:40:09.949424: Using torch.compile... 
+
+This is the configuration used by this training:
+Configuration name: 3d_fullres
+ {'data_identifier': 'nnUNetPlans_3d_fullres', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 2, 'patch_size': [16, 320, 320], 'median_image_size_in_voxels': [25.0, 478.0, 448.0], 'spacing': [3.299999952316284, 0.5859375, 0.625], 'normalization_schemes': ['ZScoreNormalization'], 'use_mask_for_norm': [False], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 7, 'features_per_stage': [32, 64, 128, 256, 320, 320, 320], 'conv_op': 'torch.nn.modules.conv.Conv3d', 'kernel_sizes': [[1, 3, 3], [1, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3]], 'strides': [[1, 1, 1], [1, 2, 2], [1, 2, 2], [2, 2, 2], [2, 2, 2], [1, 2, 2], [1, 2, 2]], 'n_conv_per_stage': [2, 2, 2, 2, 2, 2, 2], 'n_conv_per_stage_decoder': [2, 2, 2, 2, 2, 2], 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm3d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}, 'deep_supervision': True}, '_kw_requires_import': ['conv_op', 'norm_op', 'dropout_op', 'nonlin']}, 'batch_dice': False} 
+ 
+These are the global plan.json settings:
+ {'dataset_name': 'Dataset001_LumbarSpine', 'plans_name': 'nnUNetPlans', 'original_median_spacing_after_transp': [4.400000095367432, 0.5859375, 0.625], 'original_median_shape_after_transp': [17, 512, 448], 'image_reader_writer': 'SimpleITKIO', 'transpose_forward': [2, 0, 1], 'transpose_backward': [1, 2, 0], 'experiment_planner_used': 'ExperimentPlanner', 'label_manager': 'LabelManager', 'foreground_intensity_properties_per_channel': {'0': {'max': 3096.0, 'mean': 817.7688598632812, 'median': 750.0, 'min': -1000.0, 'percentile_00_5': -737.0, 'percentile_99_5': 3096.0, 'std': 835.4833984375}}} 
+ 
+2024-06-29 17:40:10.175604: unpacking dataset... 
+2024-06-29 17:40:12.969321: unpacking done... 
+2024-06-29 17:40:12.971158: Unable to plot network architecture: nnUNet_compile is enabled! 
+2024-06-29 17:40:12.979257:  
+2024-06-29 17:40:12.979348: Epoch 0 
+2024-06-29 17:40:12.979499: Current learning rate: 0.01 
